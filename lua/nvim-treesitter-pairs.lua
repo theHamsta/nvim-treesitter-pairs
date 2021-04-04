@@ -17,6 +17,7 @@ function M.init()
       highlight_pair_events = {"CursorMoved"},
       highlight_self = true,
       goto_right_end = false,
+      fallback_cmd_normal = "call matchit#Match_wrapper('',1,'n')",
       keymaps = {
         goto_partner = "<leader>%"
       }

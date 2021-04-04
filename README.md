@@ -28,6 +28,7 @@ require'nvim-treesitter.configs'.setup {
     highlight_pair_events = {"CursorMoved"}, -- when to highlight the pairs, use {} to deactivate highlighting
     highlight_self = true,
     goto_right_end = false, -- whether to go to the end of the right partner or the beginning
+    fallback_cmd_normal = "call matchit#Match_wrapper('',1,'n')", -- What command to issue when we can't find a pair (e.g. "normal! %")
     keymaps = {
       goto_partner = "<leader>%"
     }
@@ -35,6 +36,16 @@ require'nvim-treesitter.configs'.setup {
 },
 EOF
 ```
+
+## Known Limitations
+
+We hope we can fix them soon!
+
+- Can only cycle through 2 pairs
+- Only works in normal mode
+- Queries are not complete at the moment
+- Does not support counts
+- Support all things that matchit does
 
 ## Supported languages
 

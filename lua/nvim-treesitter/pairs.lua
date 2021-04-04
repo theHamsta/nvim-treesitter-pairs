@@ -8,7 +8,8 @@ local hl_namespace = api.nvim_create_namespace("nvim-treesitter-pairs")
 local M = {
   highlight_events = {},
   highlight_self = true,
-  goto_right_end = true
+  goto_right_end = false,
+  fallback_cmd_normal = true,
 }
 
 local VERY_NEGATIVE_NUMBER = -100000000
@@ -47,6 +48,10 @@ function M.goto_partner(buf)
   local partner, _, which_one = M.get_partner(buf)
 
   ts_utils.goto_node(partner, M.goto_right_end and which_one == "right")
+
+  if M.fallback_cmd_normal and not partner then
+    vim.cmd(M.fallback_cmd_normal)
+  end
 end
 
 function M.clear_highlights(buf)
@@ -71,6 +76,8 @@ function M.attach(buf, _)
   M.highlight_pair_events = config.highlight_pair_events
   M.highlight_self = config.highlight_self
   M.goto_right_end = config.goto_right_end
+  M.fallback_cmd_normal = config.fallback_cmd_normal
+
   assert(config.highlight_pair_events)
 
   for funcname, mapping in pairs(config.keymaps) do
