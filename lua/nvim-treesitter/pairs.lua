@@ -8,7 +8,7 @@ local hl_namespace = api.nvim_create_namespace("nvim-treesitter-pairs")
 local M = {
   highlight_events = {},
   highlight_self = true,
-  goto_right_end = true,
+  goto_right_end = true
 }
 
 local VERY_SMALL_NUMBER = -100000000
@@ -34,9 +34,9 @@ function M.get_partner(buf, pos)
   local pair = queries.find_best_match(buf, "@", "pairs", filter_function, scoring_function)
   if pair and pair.left and pair.left.node and pair.right and pair.right.node then
     if ts_utils.is_in_node_range(pair.left.node, unpack(pos)) then
-      return pair.right.node, pair.left.node, 'right'
+      return pair.right.node, pair.left.node, "right"
     elseif ts_utils.is_in_node_range(pair.right.node, unpack(pos)) then
-      return pair.left.node, pair.right.node, 'left'
+      return pair.left.node, pair.right.node, "left"
     end
   end
 end
@@ -46,7 +46,7 @@ function M.goto_partner(buf)
 
   local partner, _, which_one = M.get_partner(buf)
 
-  ts_utils.goto_node(partner, M.goto_right_end and which_one == 'right')
+  ts_utils.goto_node(partner, M.goto_right_end and which_one == "right")
 end
 
 function M.clear_highlights(buf)
