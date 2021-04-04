@@ -9,7 +9,7 @@ local M = {
   highlight_events = {},
   highlight_self = true,
   goto_right_end = false,
-  fallback_cmd_normal = true,
+  fallback_cmd_normal = "call matchit#Match_wrapper('',1,'n')",
 }
 
 local VERY_NEGATIVE_NUMBER = -100000000
