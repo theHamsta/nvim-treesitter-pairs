@@ -11,6 +11,8 @@ local M = {
   goto_right_node_end = true,
 }
 
+local VERY_SMALL_NUMBER = -100000000
+
 function M.get_partner(buf, pos)
   buf = buf or api.nvim_get_current_buf()
   local pos = pos or vim.api.nvim_win_get_cursor(0)
@@ -21,11 +23,11 @@ function M.get_partner(buf, pos)
   end
   local function scoring_function(pair)
     if ts_utils.is_in_node_range(pair.left.node, unpack(pos)) then
-      return ts_utils.node_length(pair.left.node)
+      return -ts_utils.node_length(pair.left.node)
     elseif ts_utils.is_in_node_range(pair.right.node, unpack(pos)) then
-      return ts_utils.node_length(pair.right.node)
+      return -ts_utils.node_length(pair.right.node)
     else
-      return 0
+      return VERY_SMALL_NUMBER
     end
   end
 
