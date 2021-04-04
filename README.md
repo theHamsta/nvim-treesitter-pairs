@@ -99,7 +99,7 @@ EOF
 <tr>
 <td>ledger</td><td> </td> </tr>
 <tr>
-<td>lua</td><td> </td> </tr>
+<td>lua</td><td>👍</td> </tr>
 <tr>
 <td>nix</td><td> </td> </tr>
 <tr>
