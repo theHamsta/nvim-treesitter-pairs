@@ -11,7 +11,7 @@ local M = {
   goto_right_end = true
 }
 
-local VERY_SMALL_NUMBER = -100000000
+local VERY_NEGATIVE_NUMBER = -100000000
 
 function M.get_partner(buf, pos)
   buf = buf or api.nvim_get_current_buf()
@@ -27,7 +27,7 @@ function M.get_partner(buf, pos)
     elseif ts_utils.is_in_node_range(pair.right.node, unpack(pos)) then
       return -ts_utils.node_length(pair.right.node)
     else
-      return VERY_SMALL_NUMBER
+      return VERY_NEGATIVE_NUMBER
     end
   end
 
