@@ -9,6 +9,7 @@ end
 local generated_text = ''
 table.sort(sorted_parsers, function(a, b) return a.name < b.name end)
 
+local generated_text = generated_text..'<table>\n'
 for _, v in ipairs(sorted_parsers) do
   local lang = (v.parser.readme_name or v.name)
   generated_text = generated_text..'<tr>\n'
