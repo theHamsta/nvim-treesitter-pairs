@@ -8,7 +8,7 @@ local hl_namespace = api.nvim_create_namespace("nvim-treesitter-pairs")
 local M = {
   highlight_events = {},
   highlight_self = true,
-  goto_right_node_end = true,
+  goto_right_end = true,
 }
 
 local VERY_SMALL_NUMBER = -100000000
@@ -46,7 +46,7 @@ function M.goto_partner(buf)
 
   local partner, _, which_one = M.get_partner(buf)
 
-  ts_utils.goto_node(partner, M.goto_right_node_end and which_one == 'right')
+  ts_utils.goto_node(partner, M.goto_right_end and which_one == 'right')
 end
 
 function M.clear_highlights(buf)

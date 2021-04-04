@@ -16,7 +16,7 @@ function M.init()
       is_supported = M.has_pairs,
       highlight_pair_events = {"CursorMoved"},
       highlight_self = true,
-      goto_right_end = true,
+      goto_right_end = false,
       keymaps = {
         goto_partner = "<leader>%"
       }
