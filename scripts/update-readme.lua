@@ -1,44 +1,21 @@
 -- Execute as `nvim --headless -c "luafile ./scripts/update-readme.lua"`
 local parsers = require 'nvim-treesitter.parsers'.get_parser_configs()
-local shared = require 'nvim-treesitter.textobjects.shared'
 local sorted_parsers = {}
 
 for k, v in pairs(parsers) do
   table.insert(sorted_parsers, {name = k, parser = v})
 end
 
-table.sort(sorted_parsers, function(a, b) return a.name < b.name end)
-
-local textobjects = {}
-for m in table.concat(vim.fn.readfile("CONTRIBUTING.md"), '\n'):gmatch('@[%w.]*') do
-  table.insert(textobjects, m)
-end
-table.sort(textobjects)
-
 local generated_text = ''
-for i, o in ipairs(textobjects) do
-  generated_text = generated_text..i..'. '..o..'\n'
-end
-
-local generated_text = generated_text..'<table>\n'
-
-generated_text = generated_text..'<th>\n'
-for i, _ in ipairs(textobjects) do
-  generated_text = generated_text..'<td>'..i..'</td> '
-end
-generated_text = generated_text..'</th>\n'
+table.sort(sorted_parsers, function(a, b) return a.name < b.name end)
 
 for _, v in ipairs(sorted_parsers) do
   local lang = (v.parser.readme_name or v.name)
   generated_text = generated_text..'<tr>\n'
   generated_text = generated_text..'<td>'..lang..'</td>'
 
-  local found_textobjects = shared.available_textobjects(lang)
-
-  for _, o in ipairs(textobjects) do
-    local found = vim.tbl_contains(found_textobjects, o:sub(2))
-    generated_text = generated_text..'<td>'..(found and '👍' or ' ')..'</td> '
-  end
+  local is_supported = require'nvim-treesitter-pairs'.has_pairs(lang)
+  generated_text = generated_text..'<td>'..(is_supported and '👍' or ' ')..'</td> '
   generated_text = generated_text..'</tr>\n'
 end
 generated_text = generated_text..'</table>\n'
