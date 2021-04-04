@@ -39,6 +39,7 @@ EOF
 ## Supported languages
 
 <!--textobjectinfo-->
+<table>
 <tr>
 <td>bash</td><td> </td> </tr>
 <tr>
