@@ -1,6 +1,6 @@
 # nvim-treesitter-pairs
 
-Create your own textobjects using tree-sitter queries!
+Create your own pair objects using tree-sitter queries!
 
 ## Installation
 
@@ -41,7 +41,7 @@ EOF
 
 We hope we can fix them soon!
 
-- Can only cycle through 2 pairs
+- Can only cycle through 2-element pairs
 - Only works in normal mode
 - Queries are not complete at the moment
 - Does not support counts
