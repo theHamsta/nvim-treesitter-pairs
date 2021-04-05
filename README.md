@@ -4,7 +4,7 @@ Create your own pair objects using tree-sitter queries!
 
 ## Installation
 
-You can install nvim-treesitter-textobjects with your favorite package manager, or using the default pack feature of Neovim!
+You can install nvim-treesitter-pairs with your favorite package manager, or using the default pack feature of Neovim!
 
 ### Using a package manager
 
