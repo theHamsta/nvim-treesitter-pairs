@@ -12,7 +12,7 @@ If you are using vim-plug, put this in your init.vim file:
 
 ```vim
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-treesitter/nvim-treesitter-pairs'
+Plug 'theHamsta/nvim-treesitter-pairs'
 ```
 
 ## Configuration
