@@ -46,6 +46,7 @@ We hope we can fix them soon!
 - Queries are not complete at the moment
 - Does not support counts
 - Support all things that matchit does
+- Is tree-sitter really needed or should we just use mature vim plugins that use regexes?
 
 ## Supported languages
 
