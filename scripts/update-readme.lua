@@ -26,8 +26,8 @@ print("\n")
 
 local readme_text = table.concat(vim.fn.readfile('README.md'), '\n')
 
-local new_readme_text = string.gsub(readme_text, "<!%-%-textobjectinfo%-%->.*<!%-%-textobjectinfo%-%->",
-                                                 "<!--textobjectinfo-->\n"..generated_text.."<!--textobjectinfo-->")
+local new_readme_text = string.gsub(readme_text, "<!%-%-pairsinfo%-%->.*<!%-%-pairsinfo%-%->",
+                                                 "<!--pairsinfo-->\n"..generated_text.."<!--pairsinfo-->")
 vim.fn.writefile(vim.fn.split(new_readme_text, '\n'), "README.md")
 
 if string.find(readme_text, generated_text, 1, 'plain') then
@@ -35,6 +35,6 @@ if string.find(readme_text, generated_text, 1, 'plain') then
   vim.cmd('q')
 else
   print("New README.md was written. Please commit that change! Old text was: ")
-  print(string.sub(readme_text, string.find(readme_text, "<!%-%-textobjectinfo%-%->.*<!%-%-textobjectinfo%-%->")))
+  print(string.sub(readme_text, string.find(readme_text, "<!%-%-pairsinfo%-%->.*<!%-%-pairsinfo%-%->")))
   vim.cmd('cq')
 end

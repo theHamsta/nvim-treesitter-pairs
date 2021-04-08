@@ -51,3 +51,7 @@ We hope we can fix them soon!
 Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support for some languages. Thy can be configured via `matchu.scm`.
 
 ## Supported languages
+
+<!--pairsinfo-->
+
+<!--pairsinfo-->
