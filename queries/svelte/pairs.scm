@@ -36,7 +36,7 @@
   "{" @left
   "}" @right)
 
-(template_element
+(style_element
   (start_tag) @left
   (end_tag)   @right)
 
