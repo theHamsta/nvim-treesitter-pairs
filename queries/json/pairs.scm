@@ -1,7 +1,1 @@
-(object
-  "{" @left
-  "}" @right)
-
-(array
-  "[" @left
-  "]" @right)
+; inherits: curly,square

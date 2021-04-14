@@ -1,10 +1,8 @@
+; inherits: curly
+
 (environment
   begin: (begin) @left
   end: (end) @right)
-
-(_
-  "{" @left
-  "}" @right)
 
 (_
   .

@@ -1,6 +1,6 @@
 ; inherits: html
 
-(interpolation
+(_
   "{{" @left
   "}}" @right)
 
