@@ -19,7 +19,13 @@ function M.init()
       goto_right_end = false,
       fallback_cmd_normal = "call matchit#Match_wrapper('',1,'n')",
       keymaps = {
-        goto_partner = "<leader>%"
+        goto_partner = "<leader>%",
+        delete_balanced = "X",
+      },
+      delete_balanced = {
+        only_on_first_char = false,
+        fallback_cmd_normal = nil,
+        longest_partner = false,
       }
     }
   }
