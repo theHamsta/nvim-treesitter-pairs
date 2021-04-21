@@ -1,1 +1,1 @@
-; inherits: c
+; inherits: c,angle
