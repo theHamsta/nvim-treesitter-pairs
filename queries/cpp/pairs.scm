@@ -1,4 +1,4 @@
-; inherits: square,paren,curly,quote
+; inherits: curly
 
 (preproc_if
   "#if"    @left

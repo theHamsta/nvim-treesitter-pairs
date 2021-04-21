@@ -1,3 +1,1 @@
-(_
-  "(" @left
-  ")" @right)
+; inherits: paren

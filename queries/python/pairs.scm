@@ -1,14 +1,4 @@
-(dictionary
-  "{" @left
-  "}" @right)
-
-(parameters
-  "(" @left
-  ")" @right)
-
-(argument_list
-  "(" @left
-  ")" @right)
+; inherits: curly,paren
 
 (if_statement
   "if" @left
