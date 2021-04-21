@@ -55,7 +55,7 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <!--pairsinfo-->
 <table>
 <tr>
-<td>bash</td><td> </td> </tr>
+<td>bash</td><td>👍</td> </tr>
 <tr>
 <td>beancount</td><td> </td> </tr>
 <tr>
@@ -63,21 +63,21 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>c</td><td>👍</td> </tr>
 <tr>
-<td>c_sharp</td><td> </td> </tr>
+<td>c_sharp</td><td>👍</td> </tr>
 <tr>
-<td>clojure</td><td> </td> </tr>
+<td>clojure</td><td>👍</td> </tr>
 <tr>
 <td>comment</td><td> </td> </tr>
 <tr>
-<td>cpp</td><td> </td> </tr>
+<td>cpp</td><td>👍</td> </tr>
 <tr>
 <td>css</td><td>👍</td> </tr>
 <tr>
-<td>dart</td><td> </td> </tr>
+<td>dart</td><td>👍</td> </tr>
 <tr>
 <td>devicetree</td><td> </td> </tr>
 <tr>
-<td>elm</td><td> </td> </tr>
+<td>elm</td><td>👍</td> </tr>
 <tr>
 <td>erlang</td><td> </td> </tr>
 <tr>
@@ -89,9 +89,9 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>go</td><td>👍</td> </tr>
 <tr>
-<td>graphql</td><td> </td> </tr>
+<td>graphql</td><td>👍</td> </tr>
 <tr>
-<td>haskell</td><td> </td> </tr>
+<td>haskell</td><td>👍</td> </tr>
 <tr>
 <td>html</td><td>👍</td> </tr>
 <tr>
@@ -105,7 +105,7 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>JSON with comments</td><td> </td> </tr>
 <tr>
-<td>julia</td><td> </td> </tr>
+<td>julia</td><td>👍</td> </tr>
 <tr>
 <td>kotlin</td><td> </td> </tr>
 <tr>
@@ -115,13 +115,13 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>lua</td><td>👍</td> </tr>
 <tr>
-<td>nix</td><td> </td> </tr>
+<td>nix</td><td>👍</td> </tr>
 <tr>
 <td>ocaml</td><td> </td> </tr>
 <tr>
 <td>ocaml_interface</td><td> </td> </tr>
 <tr>
-<td>ocamllex</td><td> </td> </tr>
+<td>ocamllex</td><td>👍</td> </tr>
 <tr>
 <td>php</td><td>👍</td> </tr>
 <tr>
@@ -142,6 +142,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>rust</td><td>👍</td> </tr>
 <tr>
 <td>scala</td><td> </td> </tr>
+<tr>
+<td>scss</td><td>👍</td> </tr>
 <tr>
 <td>sparql</td><td> </td> </tr>
 <tr>
