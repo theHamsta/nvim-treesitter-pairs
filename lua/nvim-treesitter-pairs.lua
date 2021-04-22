@@ -14,7 +14,7 @@ function M.init()
       enable = false,
       disable = {},
       is_supported = M.has_pairs,
-      highlight_pair_events = {"CursorMoved"},
+      highlight_pair_events = {},
       highlight_self = true,
       goto_right_end = false,
       fallback_cmd_normal = "call matchit#Match_wrapper('',1,'n')",
