@@ -74,15 +74,29 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>clojure</td><td>👍</td> </tr>
 <tr>
+<td>cmake</td><td> </td> </tr>
+<tr>
 <td>comment</td><td> </td> </tr>
+<tr>
+<td>commonlisp</td><td>👍</td> </tr>
 <tr>
 <td>cpp</td><td>👍</td> </tr>
 <tr>
 <td>css</td><td>👍</td> </tr>
 <tr>
+<td>cuda</td><td> </td> </tr>
+<tr>
+<td>d</td><td> </td> </tr>
+<tr>
 <td>dart</td><td>👍</td> </tr>
 <tr>
 <td>devicetree</td><td> </td> </tr>
+<tr>
+<td>dockerfile</td><td> </td> </tr>
+<tr>
+<td>dot</td><td> </td> </tr>
+<tr>
+<td>elixir</td><td> </td> </tr>
 <tr>
 <td>elm</td><td>👍</td> </tr>
 <tr>
@@ -90,15 +104,31 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>fennel</td><td>👍</td> </tr>
 <tr>
+<td>fish</td><td> </td> </tr>
+<tr>
+<td>fortran</td><td> </td> </tr>
+<tr>
 <td>Godot (gdscript)</td><td> </td> </tr>
 <tr>
 <td>Glimmer and Ember</td><td> </td> </tr>
 <tr>
+<td>glsl</td><td> </td> </tr>
+<tr>
 <td>go</td><td>👍</td> </tr>
+<tr>
+<td>Godot Resources (gdresource)</td><td> </td> </tr>
+<tr>
+<td>gomod</td><td> </td> </tr>
 <tr>
 <td>graphql</td><td>👍</td> </tr>
 <tr>
 <td>haskell</td><td>👍</td> </tr>
+<tr>
+<td>hcl</td><td> </td> </tr>
+<tr>
+<td>heex</td><td> </td> </tr>
+<tr>
+<td>hjson</td><td> </td> </tr>
 <tr>
 <td>html</td><td>👍</td> </tr>
 <tr>
@@ -110,6 +140,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>json</td><td>👍</td> </tr>
 <tr>
+<td>json5</td><td> </td> </tr>
+<tr>
 <td>JSON with comments</td><td> </td> </tr>
 <tr>
 <td>julia</td><td>👍</td> </tr>
@@ -119,6 +151,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>latex</td><td>👍</td> </tr>
 <tr>
 <td>ledger</td><td> </td> </tr>
+<tr>
+<td>llvm</td><td> </td> </tr>
 <tr>
 <td>lua</td><td>👍</td> </tr>
 <tr>
@@ -130,7 +164,11 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>ocamllex</td><td>👍</td> </tr>
 <tr>
+<td>perl</td><td> </td> </tr>
+<tr>
 <td>php</td><td>👍</td> </tr>
+<tr>
+<td>pioasm</td><td> </td> </tr>
 <tr>
 <td>python</td><td>👍</td> </tr>
 <tr>
@@ -156,11 +194,15 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>supercollider</td><td> </td> </tr>
 <tr>
+<td>surface</td><td> </td> </tr>
+<tr>
 <td>svelte</td><td>👍</td> </tr>
 <tr>
 <td>swift</td><td> </td> </tr>
 <tr>
 <td>teal</td><td> </td> </tr>
+<tr>
+<td>tlaplus</td><td> </td> </tr>
 <tr>
 <td>toml</td><td>👍</td> </tr>
 <tr>
@@ -172,9 +214,13 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>verilog</td><td> </td> </tr>
 <tr>
+<td>vim</td><td> </td> </tr>
+<tr>
 <td>vue</td><td>👍</td> </tr>
 <tr>
 <td>yaml</td><td> </td> </tr>
+<tr>
+<td>yang</td><td> </td> </tr>
 <tr>
 <td>zig</td><td> </td> </tr>
 </table>
