@@ -14,7 +14,7 @@ local M = {
 
 local VERY_NEGATIVE_NUMBER = -100000000
 
-function M.get_partner(buf, pos)
+function M.get_partner(buf, pos, longest_partner)
   buf = buf or api.nvim_get_current_buf()
   local pos = pos or vim.api.nvim_win_get_cursor(0)
   pos[1] = pos[1] - 1
@@ -24,9 +24,9 @@ function M.get_partner(buf, pos)
   end
   local function scoring_function(pair)
     if ts_utils.is_in_node_range(pair.left.node, unpack(pos)) then
-      return -ts_utils.node_length(pair.left.node)
+      return (longest_partner and 1 or -1) * ts_utils.node_length(pair.left.node)
     elseif ts_utils.is_in_node_range(pair.right.node, unpack(pos)) then
-      return -ts_utils.node_length(pair.right.node)
+      return (longest_partner and 1 or -1) * ts_utils.node_length(pair.right.node)
     else
       return VERY_NEGATIVE_NUMBER
     end
@@ -51,6 +51,38 @@ function M.goto_partner(buf)
 
   if M.fallback_cmd_normal and not partner then
     vim.cmd(M.fallback_cmd_normal)
+  end
+end
+
+local function cursor_on_start(self, partner)
+  if not self or not partner then return false end
+  local pos = vim.api.nvim_win_get_cursor(0)
+  pos[1] = pos[1] - 1
+  local self_start = {self:start()}
+  local partner_start = {partner:start()}
+
+  return (pos[1] == self_start[1] and pos[2] == self_start[2]) or
+         (pos[1] == partner_start[1] and pos[2] == partner_start[2])
+end
+
+function M.delete_balanced(buf)
+  local config = configs.get_module('pairs')
+  buf = buf or api.nvim_get_current_buf()
+
+  local partner, self = M.get_partner(buf, nil, config.delete_balanced.longest_partner)
+
+  local cur_pos_ok = not config.delete_balanced.only_on_first_char or cursor_on_start(self, partner)
+
+  local do_edit = self and partner and cur_pos_ok
+  if do_edit then
+    vim.lsp.util.apply_text_edits({
+      { range = ts_utils.node_to_lsp_range(self), newText = ''},
+      { range = ts_utils.node_to_lsp_range(partner), newText = ''},
+    }, buf)
+  end
+
+  if config.delete_balanced.fallback_cmd_normal and not do_edit then
+    vim.cmd(config.delete_balanced.fallback_cmd_normal)
   end
 end
 
