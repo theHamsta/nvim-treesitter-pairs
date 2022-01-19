@@ -106,7 +106,11 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>fish</td><td> </td> </tr>
 <tr>
+<td>foam</td><td> </td> </tr>
+<tr>
 <td>fortran</td><td> </td> </tr>
+<tr>
+<td>fusion</td><td> </td> </tr>
 <tr>
 <td>Godot (gdscript)</td><td> </td> </tr>
 <tr>
@@ -120,7 +124,11 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>gomod</td><td> </td> </tr>
 <tr>
+<td>gowork</td><td> </td> </tr>
+<tr>
 <td>graphql</td><td>👍</td> </tr>
+<tr>
+<td>hack</td><td> </td> </tr>
 <tr>
 <td>haskell</td><td>👍</td> </tr>
 <tr>
@@ -130,7 +138,11 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>hjson</td><td> </td> </tr>
 <tr>
+<td>hocon</td><td> </td> </tr>
+<tr>
 <td>html</td><td>👍</td> </tr>
+<tr>
+<td>http</td><td> </td> </tr>
 <tr>
 <td>java</td><td>👍</td> </tr>
 <tr>
@@ -156,6 +168,12 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>lua</td><td>👍</td> </tr>
 <tr>
+<td>make</td><td> </td> </tr>
+<tr>
+<td>markdown</td><td> </td> </tr>
+<tr>
+<td>ninja</td><td> </td> </tr>
+<tr>
 <td>nix</td><td>👍</td> </tr>
 <tr>
 <td>ocaml</td><td> </td> </tr>
@@ -164,11 +182,17 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>ocamllex</td><td>👍</td> </tr>
 <tr>
+<td>pascal</td><td> </td> </tr>
+<tr>
 <td>perl</td><td> </td> </tr>
 <tr>
 <td>php</td><td>👍</td> </tr>
 <tr>
 <td>pioasm</td><td> </td> </tr>
+<tr>
+<td>prisma</td><td> </td> </tr>
+<tr>
+<td>pug</td><td> </td> </tr>
 <tr>
 <td>python</td><td>👍</td> </tr>
 <tr>
@@ -177,6 +201,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>Tree-sitter query language</td><td> </td> </tr>
 <tr>
 <td>r</td><td> </td> </tr>
+<tr>
+<td>rasi</td><td> </td> </tr>
 <tr>
 <td>regex</td><td> </td> </tr>
 <tr>
