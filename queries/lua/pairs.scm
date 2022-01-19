@@ -1,6 +1,6 @@
 ; inherits: curly
 
-(for_in_statement
+(for_statement
   "for" @left
   "end" @right)
 
@@ -8,6 +8,6 @@
   "if" @left
   "end" @right)
 
-(function
+(function_declaration
   "function" @left
   "end" @right)
