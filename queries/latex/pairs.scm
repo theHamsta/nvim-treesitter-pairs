@@ -1,6 +1,6 @@
 ; inherits: curly
 
-(environment
+(generic_environment
   begin: (begin) @left
   end: (end) @right)
 
