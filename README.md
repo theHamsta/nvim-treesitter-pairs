@@ -96,6 +96,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>dot</td><td> </td> </tr>
 <tr>
+<td>eex</td><td> </td> </tr>
+<tr>
 <td>elixir</td><td> </td> </tr>
 <tr>
 <td>elm</td><td>👍</td> </tr>
@@ -176,6 +178,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>nix</td><td>👍</td> </tr>
 <tr>
+<td>norg</td><td> </td> </tr>
+<tr>
 <td>ocaml</td><td> </td> </tr>
 <tr>
 <td>ocaml_interface</td><td> </td> </tr>
@@ -187,6 +191,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>perl</td><td> </td> </tr>
 <tr>
 <td>php</td><td>👍</td> </tr>
+<tr>
+<td>phpdoc</td><td> </td> </tr>
 <tr>
 <td>pioasm</td><td> </td> </tr>
 <tr>
@@ -237,6 +243,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>turtle</td><td> </td> </tr>
 <tr>
 <td>typescript</td><td>👍</td> </tr>
+<tr>
+<td>vala</td><td> </td> </tr>
 <tr>
 <td>verilog</td><td> </td> </tr>
 <tr>
