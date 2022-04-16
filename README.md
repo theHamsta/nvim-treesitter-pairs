@@ -62,6 +62,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <!--pairsinfo-->
 <table>
 <tr>
+<td>astro</td><td> </td> </tr>
+<tr>
 <td>bash</td><td>👍</td> </tr>
 <tr>
 <td>beancount</td><td> </td> </tr>
@@ -79,6 +81,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>comment</td><td> </td> </tr>
 <tr>
 <td>commonlisp</td><td>👍</td> </tr>
+<tr>
+<td>cooklang</td><td> </td> </tr>
 <tr>
 <td>cpp</td><td>👍</td> </tr>
 <tr>
@@ -102,6 +106,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>elm</td><td>👍</td> </tr>
 <tr>
+<td>elvish</td><td> </td> </tr>
+<tr>
 <td>erlang</td><td> </td> </tr>
 <tr>
 <td>fennel</td><td>👍</td> </tr>
@@ -115,6 +121,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>fusion</td><td> </td> </tr>
 <tr>
 <td>Godot (gdscript)</td><td> </td> </tr>
+<tr>
+<td>gleam</td><td> </td> </tr>
 <tr>
 <td>Glimmer and Ember</td><td> </td> </tr>
 <tr>
@@ -137,6 +145,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>hcl</td><td> </td> </tr>
 <tr>
 <td>heex</td><td> </td> </tr>
+<tr>
+<td>help</td><td> </td> </tr>
 <tr>
 <td>hjson</td><td> </td> </tr>
 <tr>
@@ -161,6 +171,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>julia</td><td>👍</td> </tr>
 <tr>
 <td>kotlin</td><td> </td> </tr>
+<tr>
+<td>lalrpop</td><td> </td> </tr>
 <tr>
 <td>latex</td><td>👍</td> </tr>
 <tr>
@@ -212,6 +224,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>regex</td><td> </td> </tr>
 <tr>
+<td>rego</td><td> </td> </tr>
+<tr>
 <td>rst</td><td> </td> </tr>
 <tr>
 <td>ruby</td><td> </td> </tr>
@@ -220,7 +234,13 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <tr>
 <td>scala</td><td> </td> </tr>
 <tr>
+<td>scheme</td><td> </td> </tr>
+<tr>
 <td>scss</td><td>👍</td> </tr>
+<tr>
+<td>slint</td><td> </td> </tr>
+<tr>
+<td>solidity</td><td> </td> </tr>
 <tr>
 <td>sparql</td><td> </td> </tr>
 <tr>
@@ -235,6 +255,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>teal</td><td> </td> </tr>
 <tr>
 <td>tlaplus</td><td> </td> </tr>
+<tr>
+<td>todotxt</td><td> </td> </tr>
 <tr>
 <td>toml</td><td>👍</td> </tr>
 <tr>
@@ -251,6 +273,8 @@ Alternatives: https://github.com/andymass/vim-matchup added tree-sitter support 
 <td>vim</td><td> </td> </tr>
 <tr>
 <td>vue</td><td>👍</td> </tr>
+<tr>
+<td>wgsl</td><td> </td> </tr>
 <tr>
 <td>yaml</td><td> </td> </tr>
 <tr>
