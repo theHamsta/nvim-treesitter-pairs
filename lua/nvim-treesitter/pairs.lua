@@ -78,7 +78,7 @@ function M.delete_balanced(buf)
     vim.lsp.util.apply_text_edits({
       { range = ts_utils.node_to_lsp_range(self), newText = ''},
       { range = ts_utils.node_to_lsp_range(partner), newText = ''},
-    }, buf)
+    }, buf, "utf-16")
   end
 
   if config.delete_balanced.fallback_cmd_normal and not do_edit then
