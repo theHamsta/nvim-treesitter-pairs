@@ -1,1 +1,1 @@
-; inherits: paren,curly,square
+; inherits: paren,curly,square,quote
